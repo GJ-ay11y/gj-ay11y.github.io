@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GJ的博客</title>
+    <link>https://gj-ay11y.github.io/</link>
+    <description>Recent content on GJ的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Jul 2020 10:15:42 +0800</lastBuildDate>
+    
+	<atom:link href="https://gj-ay11y.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vue Axios</title>
+      <link>https://gj-ay11y.github.io/post/vue-axios/</link>
+      <pubDate>Sun, 19 Jul 2020 10:15:42 +0800</pubDate>
+      
+      <guid>https://gj-ay11y.github.io/post/vue-axios/</guid>
+      <description>Vue axios get方式 axios.get(&amp;#39;/JiaKitchen/User/login&amp;#39;, { params: { uname: this.form.username, upassword: this.form.password } }).then(res =&amp;gt; { if (res.data.flag) { this.$router.push(&amp;#39;/main&amp;#39;) } else { this.dialogVisible = true return false } }) Vue axios post 要引入qs组件
+const postData = this.$qs.stringify({ uname: this.form.username, upassword: this.form.password }) axios.post(&amp;#39;/JiaKitchen/User/login&amp;#39;, postData).then(res =&amp;gt; { console.log(res.data) if (res.data.flag) { this.$router.push(&amp;#39;/main&amp;#39;) } else { this.dialogVisible = true return false } }) </description>
+    </item>
+    
+    <item>
+      <title>Mybatis总结</title>
+      <link>https://gj-ay11y.github.io/post/mybatis/</link>
+      <pubDate>Sun, 19 Jul 2020 10:10:51 +0800</pubDate>
+      
+      <guid>https://gj-ay11y.github.io/post/mybatis/</guid>
+      <description>一、初始化项目 IDEA中创建一个空的Maven项目即可。
+二、项目的搭建 2.1、引入相关的jar包(都使用最新) 1、因为要连接mysql并进行数据库的操作，所以引入mysql 的驱动包是必须的！
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;mysql&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mysql-connector-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;8.0.20&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 2、因为要使用Mybatis框架，所以要引入mybatis的包！
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.mybatis&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mybatis&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.5.5&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 3、为了对增删改查进行测试，这里使用Junit，引入Junit的包！
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;junit&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;junit&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;4.13&amp;lt;/version&amp;gt; &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt; 4、为了了解mybatis中sql语句是怎么样被操作的，这里用打印日志来观察，引入log4j!
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;log4j&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;log4j&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.2.17&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 2.2、resources目录 resources目录进行一些资源的配置！
+2.2.1、数据源的配置（使用Druid数据源） driverClassName=com.mysql.cj.jdbc.Driver url=jdbc:mysql://49.233.29.63:3306/gj?characterEncoding=utf-8&amp;amp;useUnicode=true&amp;amp;serverTimezone=UTC username=gj password=520127 # 初始化连接数量 initialSize=5 # 最大连接数 maxActive=10 # 最大等待时间 maxWait=3000 validationQuery:SELECT 1 testWhileIdle:true testOnBorrow:false testOnReturn:false 2.2.2、日志文件的配置 #将等级为DEBUG的日志信息输出到console和file这两个目的地，console和file的定义在下面的代码 log4j.rootLogger=DEBUG,console,file #控制台输出的相关设置 log4j.appender.console = org.apache.log4j.ConsoleAppender log4j.appender.console.Target = System.out log4j.appender.console.Threshold=DEBUG log4j.appender.console.layout = org.apache.log4j.PatternLayout log4j.appender.console.layout.ConversionPattern=[%c]-%m%n #文件输出的相关设置 log4j.appender.file = org.apache.log4j.RollingFileAppender log4j.</description>
+    </item>
+    
+  </channel>
+</rss>
